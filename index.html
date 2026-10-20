@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#06131b">
+<title>Miguel Dezy | Sky Blue Luxury Motors</title>
+<style>
+:root{--bg:#061016;--panel:#0c1d27;--cyan:#55e6ff;--ice:#c9f8ff;--text:#f3fbff;--muted:#9ab3bf;--line:rgba(85,230,255,.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#103548 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}button{font:inherit;cursor:pointer}.hidden{display:none!important}
+#intro{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;background:linear-gradient(120deg,rgba(3,12,18,.86),rgba(3,18,27,.78)),url('images/car-photo-1.jpg') center/cover}
+.intro-box{max-width:780px;padding:clamp(25px,6vw,64px);border:1px solid rgba(85,230,255,.45);background:rgba(3,15,22,.76);backdrop-filter:blur(12px);box-shadow:0 0 55px #36cdeb20;border-radius:24px}
+.eyebrow{color:var(--cyan);letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;font-weight:800}.logo{font-size:clamp(2.6rem,9vw,6rem);line-height:.98;letter-spacing:-.06em;margin:20px 0}.logo span{color:var(--cyan);text-shadow:0 0 28px #55e6ff55}.intro-box p{color:#c3d9e2;line-height:1.8}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:9px 14px;color:var(--ice);font-size:.82rem;margin:5px}.primary{border:0;border-radius:12px;background:linear-gradient(120deg,#39cce9,#b4f6ff);color:#03121a;font-weight:900;padding:15px 23px;box-shadow:0 0 28px #55e6ff30;margin-top:20px}
+header{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px clamp(16px,4vw,48px);background:#041018eF;border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}.brand{font-weight:900;letter-spacing:.08em}.brand b{color:var(--cyan)}header a{color:var(--ice);text-decoration:none;font-size:.9rem}
+main{max-width:1250px;margin:auto;padding:28px 18px 70px}.hero{padding:44px 0 28px;display:flex;justify-content:space-between;gap:24px;align-items:end;flex-wrap:wrap}.hero h1{font-size:clamp(2rem,6vw,4.5rem);letter-spacing:-.05em;margin:12px 0}.hero h1 span{color:var(--cyan)}.hero p{color:var(--muted);line-height:1.7;max-width:650px}.stats{display:flex;gap:10px;flex-wrap:wrap}.stat{padding:13px 16px;background:#0a202b;border:1px solid var(--line);border-radius:13px}.stat strong{display:block;color:var(--cyan);font-size:1.2rem}.stat small{color:var(--muted)}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:20px 0}.toolbar input{background:#0b1d27;color:white;border:1px solid var(--line);border-radius:11px;padding:13px 15px;min-width:min(100%,280px);outline:none}.section-title{font-size:1.2rem;letter-spacing:.1em;text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:18px}.card{overflow:hidden;background:linear-gradient(150deg,#102632,#07131b);border:1px solid var(--line);border-radius:18px;transition:.25s;box-shadow:0 12px 30px #0002}.card:hover{transform:translateY(-5px);border-color:#55e6ff88;box-shadow:0 12px 35px #3bd8f51c}.thumb{height:205px;position:relative;overflow:hidden;background:#0a1a22}.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.card:hover .thumb img{transform:scale(1.04)}.tag{position:absolute;top:12px;left:12px;padding:7px 10px;background:#06141bdc;border:1px solid var(--line);border-radius:99px;color:var(--ice);font-size:.72rem}.card-body{padding:18px}.card h3{margin:0 0 7px;font-size:1.18rem}.sub{color:var(--muted);font-size:.85rem}.price{font-size:1.5rem;font-weight:900;color:var(--cyan);margin:17px 0 5px}.neg{font-size:.78rem;color:#c4eaf2}.card-actions{display:flex;gap:9px;margin-top:17px}.secondary{flex:1;padding:11px 12px;border-radius:10px;background:transparent;border:1px solid var(--line);color:var(--ice);font-weight:800}.secondary:hover{background:#55e6ff14}
+.contact{margin-top:48px;padding:clamp(22px,5vw,42px);border-radius:20px;border:1px solid var(--line);background:linear-gradient(120deg,#0c2530,#091720);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.contact h2{margin:8px 0}.contact p{color:var(--muted);line-height:1.7}.contact strong{color:var(--cyan)}footer{text-align:center;color:#78929e;padding:28px 18px;border-top:1px solid var(--line);font-size:.82rem}
+dialog{width:min(680px,calc(100% - 24px));border:1px solid #55e6ff66;border-radius:20px;background:#071720;color:var(--text);padding:0;box-shadow:0 20px 80px #000b}dialog::backdrop{background:#000b;backdrop-filter:blur(5px)}.modal-img{width:100%;height:clamp(200px,45vw,330px);object-fit:cover}.modal-body{padding:22px}.modal-top{display:flex;justify-content:space-between;align-items:start;gap:12px}.close{background:#102a36;border:1px solid var(--line);color:white;border-radius:9px;padding:8px 12px}.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.detail{background:#0d2631;border-radius:10px;padding:12px}.detail small{display:block;color:var(--muted);margin-bottom:5px}.detail strong{color:var(--ice)}.note{font-size:.85rem;color:var(--muted);line-height:1.6}.contact-btn{display:inline-block;text-decoration:none;text-align:center;background:var(--cyan);color:#03121a;padding:12px 16px;border-radius:10px;font-weight:900}
+@media(max-width:520px){header{padding:12px}.hero{padding-top:30px}.details{grid-template-columns:1fr 1fr}.thumb{height:185px}}
+</style>
+</head>
+<body>
+<section id="intro">
+ <div class="intro-box">
+  <div class="eyebrow">Continental Server · Live Russia</div>
+  <div class="logo">MIGUEL <span>DEZY</span><br><span style="font-size:.52em;letter-spacing:.16em">LUXURY MOTORS</span></div>
+  <p>A curated collection of sky-blue luxury rides, neon underglow and standout builds. Browse the collection, open a vehicle to see its listing, and make an offer.</p>
+  <div><span class="pill">🩵 Sky-blue builds</span><span class="pill">⚡ Neon underglow</span><span class="pill">🤝 Prices negotiable</span></div>
+  <p><strong style="color:var(--ice)">Seller:</strong> miguel_dezy &nbsp; · &nbsp; <strong style="color:var(--ice)">Game number:</strong> 243111</p>
+  <button class="primary" onclick="enterShowroom()">ENTER SHOWROOM&nbsp; ↗</button>
+ </div>
+</section>
+<div id="showroom" class="hidden">
+<header><div class="brand">MIGUEL <b>DEZY</b> / MOTORS</div><a href="#contact">CONTACT SELLER ↗</a></header>
+<main>
+ <section class="hero">
+  <div><div class="eyebrow">The collection · Continental Server</div><h1>Own the <span>glow.</span><br>Make an entrance.</h1><p>Sky-blue paint, icy neon lighting and a collection built to stand out. Tap any listing to view details and contact the seller to negotiate.</p></div>
+  <div class="stats"><div class="stat"><strong>10</strong><small>Listings*</small></div><div class="stat"><strong>100%</strong><small>Negotiable</small></div><div class="stat"><strong>243111</strong><small>Game number</small></div></div>
+ </section>
+ <div class="toolbar"><div class="section-title">Available vehicles</div><input id="search" type="search" placeholder="Search the collection…" oninput="filterCars()"></div>
+ <section id="grid" class="grid"></section>
+ <section class="contact" id="contact"><div><div class="eyebrow">Ready to make an offer?</div><h2>Contact <span style="color:var(--cyan)">miguel_dezy</span></h2><p>Live Russia · Continental Server · Game number <strong>243111</strong><br>All listed prices are in dollars and negotiable. Contact the seller in-game to discuss a deal.</p></div><button class="primary" onclick="copySeller()">COPY SELLER DETAILS</button></section>
+ <p class="note">*Two Rolls-Royce Wraith listings are shown separately. Only the vehicles shown in the supplied screenshots have photos so far. Some models are represented by the closest matching supplied screenshot; send more photos to replace or add individual vehicle images. Prices are shown in dollars as requested; tuning details are based on seller-provided information, not independently verified.</p>
+</main>
+<footer>© Miguel Dezy · Live Russia in-game vehicle listings · Unofficial player-made showroom</footer>
+</div>
+<dialog id="vehicleModal"><img id="modalImg" class="modal-img" src="" alt="Vehicle screenshot"><div class="modal-body"><div class="modal-top"><div><div class="eyebrow">Vehicle details</div><h2 id="modalName" style="margin:8px 0"></h2></div><button class="close" onclick="closeModal()">✕</button></div><div class="price" id="modalPrice"></div><div class="neg">🤝 PRICE NEGOTIABLE — send your offer</div><div class="details" id="modalDetails"></div><p class="note" id="modalNote"></p><button class="primary" onclick="copySeller()">COPY SELLER DETAILS</button></div></dialog>
+<script>
+const cars = [
+ {name:"Rolls-Royce Wraith #1",price:400000,image:"images/car-photo-1.jpg",category:"Luxury coupe",mods:["Sky-blue & white finish","Blue neon underglow","Dark tinted windows","Custom wheels"],note:"First Wraith listing. Tuning figures were not included in the supplied screenshots; ask seller for exact specs."},
+ {name:"Rolls-Royce Wraith #2",price:400000,image:"images/car-photo-2.jpg",category:"Luxury coupe",mods:["Sky-blue & white finish","Blue neon underglow","Dark tinted windows","Custom wheels"],note:"Second Wraith listing. Confirm individual condition and tuning with seller."},
+ {name:"Rolls-Royce Cullinan",price:400000,image:"images/car-photo-7.jpg",category:"Luxury SUV",mods:["Sky-blue finish","Blue neon underglow","Tinted windows"],note:"Price interpreted as 400k from the seller's message."},
+ {name:"Cadillac Escalade",price:150000,image:"images/car-photo-3.jpg",category:"Luxury SUV",mods:["Sky-blue finish","Blue neon underglow","Dark tinted windows"],note:"Ask seller for engine/tuning level and any additional upgrades."},
+ {name:"BMW F90",price:250000,image:"images/car-photo-6.jpg",category:"Performance sedan",mods:["Sky-blue finish","Blue neon underglow","Custom wheels"],note:"Ask seller for exact tuning level and performance figures."},
+ {name:"Lamborghini Huracán",price:150000,image:"images/car-photo-4.jpg",category:"Supercar",mods:["Sky-blue finish","Blue neon underglow","Dark tinted windows"],note:"Ask seller for exact tuning level and any additional upgrades."},
+ {name:"Range Rover",price:80000,image:"images/car-photo-8.jpg",category:"Luxury SUV",mods:["Sky-blue finish","Blue neon underglow","Tinted windows"],note:"Ask seller for exact tuning level and any additional upgrades."},
+ {name:"Mercedes-Benz G-Wagon",price:130000,image:"images/car-photo-9.jpg",category:"Luxury 4×4",mods:["Sky-blue finish","Blue neon underglow","Tinted windows"],note:"Ask seller for exact tuning level and any additional upgrades."},
+ {name:"McLaren",price:500000,image:"images/car-photo-5.jpg",category:"Supercar",mods:["Sky-blue finish","Blue neon underglow"],note:"Price entered as 500k. Send a dedicated McLaren photo and tuning screenshot for a more accurate listing."},
+ {name:"4-Seat Chopper",price:1600000,image:"images/car-photo-5.jpg",category:"Aircraft",mods:["Four-seat configuration"],note:"No helicopter screenshot was included yet. Image is a temporary placeholder; send a helicopter photo to replace it."}
+];
+function money(n){return n>=1000000?(n/1000000).toLocaleString("en-US",{maximumFractionDigits:2})+"M $":(n/1000).toLocaleString("en-US",{maximumFractionDigits:n%1000?1:0})+"k $"}
+function enterShowroom(){document.getElementById("intro").classList.add("hidden");document.getElementById("showroom").classList.remove("hidden");window.scrollTo(0,0);renderCars(cars)}
+function renderCars(list){document.getElementById("grid").innerHTML=list.map((c)=>`<article class="card"><div class="thumb"><img src="${c.image}" alt="${c.name}" loading="lazy"><span class="tag">${c.category}</span></div><div class="card-body"><h3>${c.name}</h3><div class="sub">🩵 Sky-blue style · neon look</div><div class="price">${money(c.price)}</div><div class="neg">Negotiable · Make an offer</div><div class="card-actions"><button class="secondary" onclick="showDetails('${c.name.replace(/'/g,"\\'")}')">VIEW DETAILS ↗</button></div></div></article>`).join("")}
+function filterCars(){let q=document.getElementById("search").value.toLowerCase();renderCars(cars.filter(c=>(c.name+" "+c.category).toLowerCase().includes(q)))}
+function showDetails(name){const c=cars.find(x=>x.name===name);document.getElementById("modalImg").src=c.image;document.getElementById("modalName").textContent=c.name;document.getElementById("modalPrice").textContent=money(c.price);document.getElementById("modalDetails").innerHTML=`<div class="detail"><small>Asking price ($)</small><strong>${money(c.price)}</strong></div><div class="detail"><small>Price type</small><strong>Negotiable</strong></div><div class="detail"><small>Server</small><strong>Continental</strong></div><div class="detail"><small>Seller</small><strong>miguel_dezy</strong></div>`+c.mods.map(m=>`<div class="detail"><small>Feature / modification</small><strong>${m}</strong></div>`).join("");document.getElementById("modalNote").textContent=c.note+" All tuning stats not shown in the provided photos should be confirmed directly with the seller.";document.getElementById("vehicleModal").showModal()}
+function closeModal(){document.getElementById("vehicleModal").close()}
+function copySeller(){let t="Seller: miguel_dezy | Live Russia | Continental Server | Game number: 243111 | All prices negotiable";if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>alert("Seller details copied!")).catch(()=>alert(t))}else{alert(t)}}
+</script>
+</body>
+</html>
